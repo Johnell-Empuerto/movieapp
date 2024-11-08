@@ -1,0 +1,115 @@
+body {
+    background-color: #141414;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+.container {
+    max-width: 1200px;
+}
+h1, h3 {
+    font-weight: bold;
+}
+#search-bar {
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+#search-bar::placeholder {
+    color: #aaa;
+}
+.card {
+    background-color: #222;
+    border: none;
+    margin-bottom: 20px;
+}
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+}
+.card-title {
+    color: #fff;
+}
+.btn-primary {
+    background-color: #e50914;
+    border: none;
+}
+.logout-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+/* Container for genres */
+.genres-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.genre {
+    width: 100%;
+}
+
+/* Horizontal scrolling container */
+.scrollable-genre {
+    display: flex;
+    overflow-x: scroll;
+    gap: 10px;
+    padding: 10px 0;
+    scroll-behavior: smooth;
+}
+
+/* Styling for movie posters */
+.movie-poster {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.movie-poster:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* Add scrollbar styling */
+.scrollable-genre::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scrollable-genre::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 5px;
+}
+
+.scrollable-genre::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+/* Logout button styling */
+.logout-btn {
+    background-color: #ff3b30;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.logout-btn:hover {
+    background-color: #ff1a00;
+}
+
+/* Search Bar */
+#search-bar {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}

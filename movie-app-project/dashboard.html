@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Dashboard</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="container mt-5">
+    <button class="logout-btn" onclick="logout()">Logout</button>
+    <h1 class="mb-4">Welcome to Movie Dashboard</h1>
+    <input type="text" id="search-bar" class="form-control" placeholder="Search for movies...">
+
+    <h3 class="mt-5 mb-3">Search Results</h3>
+    <div id="movie-results" class="row"></div>
+
+    <!-- Action Genre Section -->
+    <h3 class="mt-5 mb-3">Action Movies</h3>
+    <div class="scrollable-genre" id="action-genre"></div>
+
+    <!-- Love Genre Section -->
+    <h3 class="mt-5 mb-3">Love Movies</h3>
+    <div class="scrollable-genre" id="love-genre"></div>
+
+    <!-- Romance Genre Section -->
+    <h3 class="mt-5 mb-3">Romance Movies</h3>
+    <div class="scrollable-genre" id="romance-genre"></div>
+
+    <!-- Additional Genres (Add more as needed) -->
+    <h3 class="mt-5 mb-3">Comedy Movies</h3>
+    <div class="scrollable-genre" id="comedy-genre"></div>
+
+
+
+    <h3 class="mt-5 mb-3">Your Favorites</h3>
+    <div id="favorites" class="row"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="js/dashboard.js"></script>
+<script>
+    
+</script>
+</body>
+</html>
